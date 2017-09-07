@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: TracTocMacro
+Version: 11.0.0.5
+Summary: A macro to create tables of contents.
+Home-page: http://trac-hacks.org/wiki/TocMacro
+Author: Christian Boos
+Author-email: cboosr@neuf.fr
+License: BSD 3-Clause
+Description: A macro to create a table of contents for either a
+                                single page, or a collection of pages.
+Keywords: trac plugin table of content macro
+Platform: UNKNOWN

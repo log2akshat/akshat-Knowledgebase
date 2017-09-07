@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+TracTocMacro.egg-info/PKG-INFO
+TracTocMacro.egg-info/SOURCES.txt
+TracTocMacro.egg-info/dependency_links.txt
+TracTocMacro.egg-info/entry_points.txt
+TracTocMacro.egg-info/top_level.txt
+tractoc/__init__.py
+tractoc/macro.py
