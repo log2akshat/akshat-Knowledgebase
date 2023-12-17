@@ -40,3 +40,6 @@ All of the cgroups subsystem arrange processes in a hierarchy.
 - We can interact with cgroups with a virtual filesystem typically mounted at /sys/fs/cgroup - a bunch of file and directories appears here but they are just interfaces in the Kernel's data structures for cgroups.
 -- Each directory inside the given subsystem root represents a cgroup. In each directory we see a file called tasks, this file holds all of the process IDs for the processes assigned to that particular cgroup. Other files have settings and utilization data or change the settings. To move the process to a different cgroup we just need to write the process id to the target's cgroups tasks file.
 
+
+# What are Namespaces ?
+Namespaces are other Linux Kernel Primitives. Namespaces are concerned with the visibility of Resources and access control. Namespaces can make it appear for the processes that it has its own copy of the resources. In other cases Namespaces can map the resources outside the Namespace to a resource inside a Namespace. Properties like Names or Permissions when a process make changes to a resource within the Namespace generally that change will be within that Namespace not processes outside. The processes effectively have its own copy.
