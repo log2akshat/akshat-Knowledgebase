@@ -43,3 +43,14 @@ All of the cgroups subsystem arrange processes in a hierarchy.
 
 # What are Namespaces ?
 Namespaces are other Linux Kernel Primitives. Namespaces are concerned with the visibility of Resources and access control. Namespaces can make it appear for the processes that it has its own copy of the resources. In other cases Namespaces can map the resources outside the Namespace to a resource inside a Namespace. Properties like Names or Permissions when a process make changes to a resource within the Namespace generally that change will be within that Namespace not processes outside. The processes effectively have its own copy.
+
+Linux is a bunch of Namespaces that covers different kind of resources, like in recent versions of Linux new Namespaces are being developed as well.
+- Network
+- Filesystem (mounts)
+- Processes (pid)
+- Inter-process communication (ipc)
+- Hostname and domain name (uts)
+- User and group IDs
+- cgroup
+
+Just like cgroups, processes can be in any combination of Namespaces. Processes can share different Namespaces with each other. For example we could have mount Namespace that is shared between most processes who want to run one of them it in a separate network or pid Namespace. Or we can run a process with its own Namespacees much like a container.
